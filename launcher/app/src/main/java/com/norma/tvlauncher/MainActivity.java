@@ -1173,7 +1173,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         IntentFilter remoteKeysFilter = new IntentFilter();
         remoteKeysFilter.addAction(ACTION_TOGGLE_SETTINGS);
         remoteKeysFilter.addAction(ACTION_TOGGLE_INPUTS);
-        registerReceiver(remoteKeyReceiver, remoteKeysFilter);
+        if (android.os.Build.VERSION.SDK_INT >= 33) { registerReceiver(remoteKeyReceiver, remoteKeysFilter, Context.RECEIVER_NOT_EXPORTED); } else { registerReceiver(remoteKeyReceiver, remoteKeysFilter); }
         if (festive && diya != null) {
             diya.start();
             LocalDate today = LocalDate.now();
