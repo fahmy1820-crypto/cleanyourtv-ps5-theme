@@ -4437,6 +4437,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
 
     public static boolean isDefaultLauncher(Context context) {
         if (context == null) return false;
+        if (android.os.Build.VERSION.SDK_INT >= 29) { try { return context.getSystemService(android.app.role.RoleManager.class).isRoleHeld(android.app.role.RoleManager.ROLE_HOME); } catch (Throwable ignored) {} }
         try {
             Intent intent = new Intent(Intent.ACTION_MAIN);
             intent.addCategory(Intent.CATEGORY_HOME);
