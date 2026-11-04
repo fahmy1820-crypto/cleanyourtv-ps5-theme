@@ -2942,6 +2942,9 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
 
     private void startKenBurnsEffect(ImageView iv, int direction) {
         if (iv == null) return;
+        iv.setScaleX(1.0f); iv.setScaleY(1.0f); iv.setTranslationX(0f); iv.setTranslationY(0f);
+        if (true) return;
+        if (iv == null) return;
 
         // Cancel previous animator on this ImageView
         if (iv == dockWallpaperA && kbAnimatorA != null) {
