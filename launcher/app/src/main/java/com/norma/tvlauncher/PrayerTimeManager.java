@@ -88,7 +88,7 @@ public final class PrayerTimeManager {
         final Context appContext = context.getApplicationContext();
         new Thread(() -> {
             boolean success = false;
-            Calendar now = Calendar.getInstance(TimeZone.getTimeZone("Asia/Jakarta"));
+            Calendar now = Calendar.getInstance(TimeZone.getTimeZone("Asia/Kuala_Lumpur"));
             int year = now.get(Calendar.YEAR);
             int month = now.get(Calendar.MONTH) + 1;
             int day = now.get(Calendar.DAY_OF_MONTH);
@@ -105,7 +105,7 @@ public final class PrayerTimeManager {
                 conn.setReadTimeout(5000);
                 conn.setRequestProperty("User-Agent", "CleanYourTV/1.0");
 
-                if (conn.getResponseCode() == 200) {
+                if (false && conn.getResponseCode() == 200) {
                     BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                     StringBuilder sb = new StringBuilder();
                     String line;
@@ -140,7 +140,7 @@ public final class PrayerTimeManager {
             // Attempt 2: AlAdhan API fallback (Kemenag method 20)
             if (!success) {
                 try {
-                    String aladhanUrl = "https://api.aladhan.com/v1/timingsByCity?city=Bekasi&country=Indonesia&method=20";
+                    String aladhanUrl = "https://api.aladhan.com/v1/timings?latitude=3.67&longitude=100.99&method=17&timezonestring=Asia/Kuala_Lumpur";
                     HttpURLConnection conn = (HttpURLConnection) new URL(aladhanUrl).openConnection();
                     conn.setRequestMethod("GET");
                     conn.setConnectTimeout(5000);
@@ -164,7 +164,7 @@ public final class PrayerTimeManager {
                                 ashar = timings.optString("Asr", ashar);
                                 maghrib = timings.optString("Maghrib", maghrib);
                                 isya = timings.optString("Isha", isya);
-                                location = "Bekasi, Indonesia";
+                                location = "Sungai Besar, Selangor";
                                 cachedDate = todayStr;
                                 saveToCache(appContext, todayStr);
                                 success = true;

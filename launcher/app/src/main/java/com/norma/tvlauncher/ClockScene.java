@@ -197,7 +197,7 @@ final class ClockScene {
         SharedPreferences sp = context.getSharedPreferences(Config.SETTINGS_NAME, Context.MODE_PRIVATE);
         String screensaverType = sp.getString("screensaver_type", "solat");
         boolean isSolat = "solat".equals(screensaverType);
-        String tzId = sp.getString("weather_timezone", "Asia/Jakarta");
+        String tzId = sp.getString("weather_timezone", "Asia/Kuala_Lumpur");
         syncTimeZones(root, tzId);
 
         stopCallbacks();
@@ -273,7 +273,7 @@ final class ClockScene {
     // ---- Prayer UI -------------------------------------------------------------
 
     private void updatePrayerUi() {
-        Calendar now = Calendar.getInstance(TimeZone.getTimeZone("Asia/Jakarta"));
+        Calendar now = Calendar.getInstance(TimeZone.getTimeZone("Asia/Kuala_Lumpur"));
         PrayerTimeManager.PrayerInterval interval = prayerManager.getPrayerInterval(now);
 
         if (circleTimer != null) {

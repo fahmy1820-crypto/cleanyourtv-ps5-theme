@@ -910,7 +910,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         btnLibraryTop.setOnKeyListener(pillKeys);
 
         SharedPreferences spWeather = getSharedPreferences(Config.SETTINGS_NAME, MODE_PRIVATE);
-        String cachedTz = spWeather.getString("weather_timezone", "Asia/Jakarta");
+        String cachedTz = spWeather.getString("weather_timezone", "Asia/Kuala_Lumpur");
         syncTimezone(cachedTz);
 
         fetchWeatherAsync(false);
