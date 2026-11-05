@@ -298,7 +298,7 @@
                         android:textColor="@drawable/pill_text"
                         android:textSize="15sp"
                         android:duplicateParentState="true"
-                        android:text="Bekasi" />
+                        android:text="Sungai Besar" />
                 </LinearLayout>
 
                 <TextView

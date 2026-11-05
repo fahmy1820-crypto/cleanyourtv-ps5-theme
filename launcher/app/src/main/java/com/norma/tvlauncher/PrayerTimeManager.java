@@ -27,12 +27,12 @@ public final class PrayerTimeManager {
     private static final String PREF_NAME = "prayer_times_cache";
 
     // Default timings for Kota Bekasi if offline & no cache
-    private static final String DEF_SUBUH = "04:11";
-    private static final String DEF_DZUHUR = "11:40";
-    private static final String DEF_ASHAR = "14:50";
-    private static final String DEF_MAGHRIB = "17:48";
-    private static final String DEF_ISYA = "18:58";
-    private static final String DEF_LOCATION = "Bekasi, Jawa Barat";
+    private static final String DEF_SUBUH = "05:41";
+    private static final String DEF_DZUHUR = "13:00";
+    private static final String DEF_ASHAR = "16:20";
+    private static final String DEF_MAGHRIB = "19:05";
+    private static final String DEF_ISYA = "20:15";
+    private static final String DEF_LOCATION = "Sungai Besar, Selangor";
 
     private static PrayerTimeManager instance;
 

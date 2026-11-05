@@ -4631,7 +4631,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
 
         // Always show cached values first
         updateWeatherUi(
-                sp.getString("weather_city", "Bekasi"),
+                sp.getString("weather_city", "Sungai Besar"),
                 sp.getInt("weather_temp", 28),
                 sp.getInt("weather_code", 2)
         );
@@ -4642,7 +4642,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
 
         Executors.newSingleThreadExecutor().execute(() -> {
             try {
-                String city = sp.getString("weather_city", "Bekasi");
+                String city = sp.getString("weather_city", "Sungai Besar");
                 double lat = -6.2348;
                 double lon = 106.9896;
 
@@ -4740,7 +4740,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         });
 
         SharedPreferences sp = getSharedPreferences(Config.SETTINGS_NAME, MODE_PRIVATE);
-        String city = sp.getString("weather_city", "Bekasi");
+        String city = sp.getString("weather_city", "Sungai Besar");
         int temp = sp.getInt("weather_temp", 28);
         int code = sp.getInt("weather_code", 2);
 

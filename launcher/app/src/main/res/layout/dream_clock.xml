@@ -66,7 +66,7 @@
             android:id="@+id/tvDreamCity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bekasi • Jawa Barat"
+            android:text="Sungai Besar • Selangor"
             android:textColor="#E2E8F0"
             android:textSize="13sp"
             android:fontFamily="@font/inter_medium" />
@@ -182,7 +182,7 @@
                         android:id="@+id/timeSubuh"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="04:11"
+                        android:text="05:41"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:fontFamily="@font/inter_semibold" />
@@ -218,7 +218,7 @@
                         android:id="@+id/timeDzuhur"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="11:40"
+                        android:text="13:00"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:fontFamily="@font/inter_semibold" />
@@ -254,7 +254,7 @@
                         android:id="@+id/timeAshar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="14:50"
+                        android:text="16:20"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:fontFamily="@font/inter_semibold" />
@@ -290,7 +290,7 @@
                         android:id="@+id/timeMaghrib"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="17:48"
+                        android:text="19:05"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:fontFamily="@font/inter_semibold" />
@@ -326,7 +326,7 @@
                         android:id="@+id/timeIsya"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="18:58"
+                        android:text="20:15"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:fontFamily="@font/inter_semibold" />
